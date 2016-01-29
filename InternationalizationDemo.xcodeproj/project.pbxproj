@@ -12,6 +12,8 @@
 		080FBDDA1C5C064700DD6A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080FBDD81C5C064700DD6A4D /* Main.storyboard */; };
 		080FBDDC1C5C064700DD6A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080FBDDB1C5C064700DD6A4D /* Assets.xcassets */; };
 		080FBDDF1C5C064700DD6A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080FBDDD1C5C064700DD6A4D /* LaunchScreen.storyboard */; };
+		080FBDE71C5C0CE500DD6A4D /* ios.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 080FBDE61C5C0CE500DD6A4D /* ios.jpg */; };
+		080FBDEC1C5C2B4300DD6A4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 080FBDEE1C5C2B4300DD6A4D /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		080FBDDB1C5C064700DD6A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		080FBDDE1C5C064700DD6A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		080FBDE01C5C064700DD6A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		080FBDE61C5C0CE500DD6A4D /* ios.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ios.jpg; sourceTree = "<group>"; };
+		080FBDE81C5C2A7800DD6A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		080FBDE91C5C2A7800DD6A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		080FBDED1C5C2B4300DD6A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,14 @@
 		080FBDD31C5C064700DD6A4D /* InternationalizationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				080FBDEE1C5C2B4300DD6A4D /* InfoPlist.strings */,
 				080FBDD41C5C064700DD6A4D /* AppDelegate.swift */,
 				080FBDD61C5C064700DD6A4D /* ViewController.swift */,
 				080FBDD81C5C064700DD6A4D /* Main.storyboard */,
 				080FBDDB1C5C064700DD6A4D /* Assets.xcassets */,
 				080FBDDD1C5C064700DD6A4D /* LaunchScreen.storyboard */,
 				080FBDE01C5C064700DD6A4D /* Info.plist */,
+				080FBDE61C5C0CE500DD6A4D /* ios.jpg */,
 			);
 			path = InternationalizationDemo;
 			sourceTree = "<group>";
@@ -101,10 +109,10 @@
 			};
 			buildConfigurationList = 080FBDCC1C5C064700DD6A4D /* Build configuration list for PBXProject "InternationalizationDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = es;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				es,
 				Base,
 			);
 			mainGroup = 080FBDC81C5C064700DD6A4D;
@@ -123,8 +131,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				080FBDDF1C5C064700DD6A4D /* LaunchScreen.storyboard in Resources */,
+				080FBDE71C5C0CE500DD6A4D /* ios.jpg in Resources */,
 				080FBDDC1C5C064700DD6A4D /* Assets.xcassets in Resources */,
 				080FBDDA1C5C064700DD6A4D /* Main.storyboard in Resources */,
+				080FBDEC1C5C2B4300DD6A4D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +157,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				080FBDD91C5C064700DD6A4D /* Base */,
+				080FBDE81C5C2A7800DD6A4D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,8 +166,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				080FBDDE1C5C064700DD6A4D /* Base */,
+				080FBDE91C5C2A7800DD6A4D /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		080FBDEE1C5C2B4300DD6A4D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				080FBDED1C5C2B4300DD6A4D /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,6 +304,7 @@
 				080FBDE51C5C064700DD6A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
