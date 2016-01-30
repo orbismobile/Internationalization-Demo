@@ -24,23 +24,27 @@ class ViewController: UIViewController {
     
 
     @IBAction func minusMoney(sender: AnyObject) {
-        self.showAlertView("Egreso", dataStore: self.outMoneyData)
+        self.showAlertView("Egreso", factor:-1)
     }
 
     
     @IBAction func addMoney(sender: AnyObject) {
-        self.showAlertView("Ingresar",dataStore: self.inMoneyData)
+        self.showAlertView("Ingresar", factor: 1)
     }
     
-    func showAlertView(title: String, var dataStore:[Double]) -> Void {
+    func showAlertView(title: String, factor:Double) -> Void {
         let alertViewController = UIAlertController(title: title, message: "Ingrese un monto", preferredStyle: .Alert) as UIAlertController
         let addAction = UIAlertAction(title: "Ingresar", style: .Default) { (UIAlertAction) -> Void in
             
             let textField = alertViewController.textFields![0] as UITextField
-            let newValue = Double(textField.text!)!
+            let newValue = Double(textField.text!)! * factor
             
             self.moneyData.append(newValue)
-            dataStore.append(newValue)
+            if factor == -1 {
+                self.outMoneyData.append(newValue)
+            }else{
+                self.inMoneyData.append(newValue)
+            }
             
             self.tableView.reloadData()
             self.totalMoney.text = "S/. \(self.sumMoney())"
@@ -54,6 +58,8 @@ class ViewController: UIViewController {
     
     
     func reloadTableView() -> Void {
+        print("in \(self.inMoneyData)")
+        print("out \(self.outMoneyData)")
         self.tableView.reloadData()
     }
     
