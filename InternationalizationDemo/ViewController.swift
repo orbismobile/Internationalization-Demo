@@ -23,28 +23,27 @@ class ViewController: UIViewController {
     }
     
 
+    @IBAction func minusMoney(sender: AnyObject) {
+        self.showAlertView("Egreso", dataStore: self.outMoneyData)
+    }
+
+    
     @IBAction func addMoney(sender: AnyObject) {
-        let alertViewController = UIAlertController(title: "Ingreso", message: "Ingrese un monto", preferredStyle: .Alert) as UIAlertController
+        self.showAlertView("Ingresar",dataStore: self.inMoneyData)
+    }
+    
+    func showAlertView(title: String, var dataStore:[Double]) -> Void {
+        let alertViewController = UIAlertController(title: title, message: "Ingrese un monto", preferredStyle: .Alert) as UIAlertController
         let addAction = UIAlertAction(title: "Ingresar", style: .Default) { (UIAlertAction) -> Void in
+            
             let textField = alertViewController.textFields![0] as UITextField
             let newValue = Double(textField.text!)!
             
             self.moneyData.append(newValue)
-            
-            if newValue < 0 {
-                self.outMoneyData.append(newValue)
-            } else {
-                self.inMoneyData.append(newValue)
-            }
+            dataStore.append(newValue)
             
             self.tableView.reloadData()
-            
             self.totalMoney.text = "S/. \(self.sumMoney())"
-            
-            /*self.moneyData.insert(, atIndex: 0)
-            let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-            self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-            */
         }
         let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel, handler: nil)
         alertViewController.addAction(addAction)
@@ -52,6 +51,7 @@ class ViewController: UIViewController {
         alertViewController.addTextFieldWithConfigurationHandler{ (UITextField) -> Void in }
         self.presentViewController(alertViewController, animated: true) { () -> Void in }
     }
+    
     
     func reloadTableView() -> Void {
         self.tableView.reloadData()

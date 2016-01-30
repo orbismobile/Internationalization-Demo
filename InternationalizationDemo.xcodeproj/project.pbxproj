@@ -104,6 +104,7 @@
 				TargetAttributes = {
 					080FBDD01C5C064700DD6A4D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CPX7FN2K89;
 					};
 				};
 			};
@@ -267,9 +268,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Erik Flores (YBZ9D9DX9X)";
 				INFOPLIST_FILE = InternationalizationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pe.elcomercio.sample.Internationalization.InternationalizationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weriklandia.Internationalization.InternationalizationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -278,9 +280,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = InternationalizationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pe.elcomercio.sample.Internationalization.InternationalizationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weriklandia.Internationalization.InternationalizationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
