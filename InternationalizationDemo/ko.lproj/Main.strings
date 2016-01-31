@@ -2,20 +2,20 @@
 "TIe-Cg-nMu.text" = "0";
 
 /* Class = "UILabel"; text = "Saldo"; ObjectID = "arh-BJ-F6E"; */
-"arh-BJ-F6E.text" = "Balance $";
+"arh-BJ-F6E.text" = "균형 ₩";
 
 /* Class = "UISegmentedControl"; bEW-kj-arf.segmentTitles[0] = "Ingresos"; ObjectID = "bEW-kj-arf"; */
-"bEW-kj-arf.segmentTitles[0]" = "Income";
+"bEW-kj-arf.segmentTitles[0]" = "수입";
 
 /* Class = "UISegmentedControl"; bEW-kj-arf.segmentTitles[1] = "Egresos"; ObjectID = "bEW-kj-arf"; */
-"bEW-kj-arf.segmentTitles[1]" = "Expenses";
+"bEW-kj-arf.segmentTitles[1]" = "비용";
 
 /* Class = "UILabel"; text = "Erik"; ObjectID = "l0K-75-lt8"; */
 "l0K-75-lt8.text" = "Erik";
 
 /* Class = "UINavigationItem"; title = "Mi Dinero"; ObjectID = "s4Q-9k-eDR"; */
-"s4Q-9k-eDR.title" = "My Money";
+"s4Q-9k-eDR.title" = "내 돈";
 
 /* Class = "UILabel"; text = "Hola"; ObjectID = "zBE-0d-zjM"; */
-"zBE-0d-zjM.text" = "Hello";
+"zBE-0d-zjM.text" = "안녕하세요.";
 

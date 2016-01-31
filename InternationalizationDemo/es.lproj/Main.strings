@@ -1,21 +1,21 @@
+
 /* Class = "UILabel"; text = "S/. 0"; ObjectID = "TIe-Cg-nMu"; */
 "TIe-Cg-nMu.text" = "0";
 
 /* Class = "UILabel"; text = "Saldo"; ObjectID = "arh-BJ-F6E"; */
-"arh-BJ-F6E.text" = "Balance $";
+"arh-BJ-F6E.text" = "Saldo";
 
 /* Class = "UISegmentedControl"; bEW-kj-arf.segmentTitles[0] = "Ingresos"; ObjectID = "bEW-kj-arf"; */
-"bEW-kj-arf.segmentTitles[0]" = "Income";
+"bEW-kj-arf.segmentTitles[0]" = "Ingresos";
 
 /* Class = "UISegmentedControl"; bEW-kj-arf.segmentTitles[1] = "Egresos"; ObjectID = "bEW-kj-arf"; */
-"bEW-kj-arf.segmentTitles[1]" = "Expenses";
+"bEW-kj-arf.segmentTitles[1]" = "Egresos";
 
 /* Class = "UILabel"; text = "Erik"; ObjectID = "l0K-75-lt8"; */
 "l0K-75-lt8.text" = "Erik";
 
 /* Class = "UINavigationItem"; title = "Mi Dinero"; ObjectID = "s4Q-9k-eDR"; */
-"s4Q-9k-eDR.title" = "My Money";
+"s4Q-9k-eDR.title" = "Mi Dinero";
 
 /* Class = "UILabel"; text = "Hola"; ObjectID = "zBE-0d-zjM"; */
-"zBE-0d-zjM.text" = "Hello";
-
+"zBE-0d-zjM.text" = "Hola";

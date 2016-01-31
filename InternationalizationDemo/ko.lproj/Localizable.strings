@@ -1,0 +1,15 @@
+/* Boton cancelar */
+"Cancelar" = "취소";
+
+/* Titulo del alert */
+"Egreso" = "비용";
+
+/* Titulo del alert */
+"Ingresar" = "예금";
+
+/* texto boton ingreso */
+"IngresarBtn" = "확인";
+
+/* Mensaje en el alert */
+"Ingrese un monto" = "금액을 입력";
+

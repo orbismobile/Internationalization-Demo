@@ -1,0 +1,15 @@
+/* Boton cancelar */
+"Cancelar" = "Cancel";
+
+/* Titulo del alert */
+"Egreso" = "Expenses";
+
+/* Titulo del alert */
+"Ingresar" = "Income";
+
+/* texto boton ingreso */
+"IngresarBtn" = "OK";
+
+/* Mensaje en el alert */
+"Ingrese un monto" = "Enter an amount";
+

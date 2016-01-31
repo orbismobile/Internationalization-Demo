@@ -22,19 +22,34 @@ class ViewController: UIViewController {
         self.segementView.addTarget(self, action: Selector("reloadTableView"), forControlEvents: .ValueChanged)
     }
     
+    private struct AlertMessages {
+        struct Box {
+            static let titleEgreso = NSLocalizedString("Egreso", comment: "Titulo del alert")
+            static let titleIngresar = NSLocalizedString("Ingresar", comment: "Titulo del alert")
+            static let messages = NSLocalizedString("Ingrese un monto", comment: "Mensaje en el alert")
+            static let btnIngresar = NSLocalizedString("IngresarBtn", comment: "texto boton ingreso")
+            static let btnCancelar = NSLocalizedString("Cancelar", comment: "Boton cancelar")
+        }
+    }
+    
 
     @IBAction func minusMoney(sender: AnyObject) {
-        self.showAlertView("Egreso", factor:-1)
+        self.showAlertView( AlertMessages.Box.titleEgreso, factor:-1)
     }
 
     
     @IBAction func addMoney(sender: AnyObject) {
-        self.showAlertView("Ingresar", factor: 1)
+        self.showAlertView(AlertMessages.Box.titleIngresar, factor: 1)
     }
     
-    func showAlertView(title: String, factor:Double) -> Void {
-        let alertViewController = UIAlertController(title: title, message: "Ingrese un monto", preferredStyle: .Alert) as UIAlertController
-        let addAction = UIAlertAction(title: "Ingresar", style: .Default) { (UIAlertAction) -> Void in
+    
+    // NSLocalizedString, me permite hacer los cambios para diferentes idiomas, las traducciones estan en los archivos .strings
+    
+
+    
+    func showAlertView(titleAlert: String, factor:Double) -> Void {
+        let alertViewController = UIAlertController(title: titleAlert, message: AlertMessages.Box.messages, preferredStyle: .Alert) as UIAlertController
+        let addAction = UIAlertAction(title: AlertMessages.Box.btnIngresar, style: .Default) { (UIAlertAction) -> Void in
             
             let textField = alertViewController.textFields![0] as UITextField
             let newValue = Double(textField.text!)! * factor
@@ -47,9 +62,9 @@ class ViewController: UIViewController {
             }
             
             self.tableView.reloadData()
-            self.totalMoney.text = "S/. \(self.sumMoney())"
+            self.totalMoney.text = "\(self.sumMoney())"
         }
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: AlertMessages.Box.btnCancelar, style: .Cancel, handler: nil)
         alertViewController.addAction(addAction)
         alertViewController.addAction(cancelAction)
         alertViewController.addTextFieldWithConfigurationHandler{ (UITextField) -> Void in }
