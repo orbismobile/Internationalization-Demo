@@ -1,5 +1,5 @@
 # Internationalization-Demo
-This demo has a example implementation for Location
+This demo has a example implementation for Location /play tada
 
 ## App name
 ### Korean name
