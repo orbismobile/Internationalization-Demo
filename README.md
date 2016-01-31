@@ -3,9 +3,9 @@ This demo has a example implementation for Location
 
 ### App name
 - Korean name
-![korean_app](https://github.com/orbismobile/Internationalization-Demo/blob/master/screens/korean_icon.png =50x)
+<img src="https://github.com/orbismobile/Internationalization-Demo/blob/master/screens/korean_icon.png" width="50px">
 - Spanish name
-![Spanish_name](https://github.com/orbismobile/Internationalization-Demo/blob/master/screens/spanish_icon.png =50x)
+<img src="https://github.com/orbismobile/Internationalization-Demo/blob/master/screens/spanish_icon.png" width="50px">
 
 ### Storyboard
 - Korean Storyboard
@@ -16,5 +16,5 @@ This demo has a example implementation for Location
 ### AlertView (The configuration for this section do development in .strings files)
 - Korean Version
 ![Korean](https://github.com/orbismobile/Internationalization-Demo/blob/master/screens/korean_alert.jpg =250x)
- - Spanish Version
+- Spanish Version
 ![Spanish](https://github.com/orbismobile/Internationalization-Demo/blob/master/screens/spanish_alert.jpg =250x)
