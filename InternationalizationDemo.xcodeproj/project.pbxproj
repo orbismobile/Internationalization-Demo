@@ -116,7 +116,7 @@
 				TargetAttributes = {
 					080FBDD01C5C064700DD6A4D = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = CPX7FN2K89;
+						DevelopmentTeam = JBGR56T3X4;
 					};
 				};
 			};
@@ -301,7 +301,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = InternationalizationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.weriklandia.Internationalization.InternationalizationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.elcomercio.sample.Internationalization.InternationalizationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -313,7 +313,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = InternationalizationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.weriklandia.Internationalization.InternationalizationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.elcomercio.sample.Internationalization.InternationalizationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
